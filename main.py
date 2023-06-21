@@ -350,7 +350,7 @@ def github_auth_handler(code: str = Query(...), Authorize: AuthJWT = Depends()):
     github_client_id = superagi.config.config.get_config("GITHUB_CLIENT_ID")
     github_client_secret = superagi.config.config.get_config("GITHUB_CLIENT_SECRET")
 
-    frontend_url = superagi.config.config.get_config("FRONTEND_URL", "http://localhost:3000")
+    frontend_url = superagi.config.config.get_config("FRONTEND_URL", "http://136.243.50.33:8006")
     params = {
         'client_id': github_client_id,
         'client_secret': github_client_secret,
