@@ -7,5 +7,4 @@ COPY config.yaml ./config.yaml
 COPY entrypoint.sh /entrypoint.sh
 COPY wait-for-it.sh /wait-for-it.sh
 RUN chmod +x /entrypoint.sh /wait-for-it.sh
-RUN apt install celery
 CMD ["/wait-for-it.sh", "super__postgres:5432","-t","60","--","/entrypoint.sh"]
