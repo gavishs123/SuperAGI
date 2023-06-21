@@ -6,7 +6,7 @@ services:
       - "./:/app"
     build: .
     ports:
-      - "8003:8001"
+      - "8003:8002"
     depends_on:
       - super__redis
       - super__postgres
