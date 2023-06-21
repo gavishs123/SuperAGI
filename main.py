@@ -57,7 +57,12 @@ app.add_middleware(DBSessionMiddleware, db_url=db_url)
 # Configure CORS middleware
 origins = [
     "http://localhost:3001",
+
     "http://localhost:3000",
+    
+    "http://136.243.50.33:3001",
+    "http://136.243.50.33:3000",
+    "http://136.243.50.33:8006"
     # Add more origins if needed
 ]
 
