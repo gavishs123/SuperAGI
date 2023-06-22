@@ -62,6 +62,7 @@ export default function ActivityFeed({selectedRunId, selectedView}) {
   function fetchFeeds() {
     getExecutionFeeds(selectedRunId)
       .then((response) => {
+        console.log(response ,"rrrrrrrrrrrrrr")
         const data = response.data;
         setFeeds(data.feeds);
         setRunStatus(data.status);
